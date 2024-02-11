@@ -1,0 +1,154 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+html {
+    overflow: hidden;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: "Rajdhani", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#canvasMatrix{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    margin: 0px 0px 0px 0px;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    padding: 2rem 4rem 1rem; 
+}
+
+nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background: rgba(77, 158, 93, 0.514);
+}
+
+.logo {
+    background-image: url("IMG/logo-alura.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 4rem;
+    height: 4rem;
+    padding: 2rem;
+    border: solid 4px rgba(255, 255, 255, 0.85);
+    border-radius: 100%;
+}
+
+h1 {
+    padding: 0rem 4rem;
+    font-size: 2.5rem;
+    color: white;
+}
+
+main {
+    width: 100%;
+    height: 60%;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 1rem 4rem;
+}
+
+.seccion1 {
+    width: 65%;
+}
+
+.seccion2 {
+    width: 30%;
+}
+
+.textarea-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 15px;
+}
+
+.textarea-container>textarea {
+    background-color: rgba(77, 158, 93, 0.922);
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.textarea-container>textarea::placeholder {
+    color: rgb(254, 254, 254);
+    opacity: 0.5;
+}
+
+.textarea-container>textarea:focus {
+    outline: none;
+    border: solid 3px;
+    box-shadow: 0px 0px 10px 2px;
+}
+
+.textarea-container>button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 15%;
+    text-align: center;
+}
+
+button {
+    background: rgba(152, 220, 75, 0.76);
+    padding: 15px 25px;
+    font-weight: 700;
+    font-size: 1rem;
+    text-align: center;
+    width: 100%;
+    
+}
+
+button:hover {
+    color: white;
+    background: rgba(14, 84, 0, 0.584);
+    text-shadow: 0rem 0.08rem 0.2rem;
+    border-color: white;
+    font-size: 1.15rem;
+}
+
+.btn-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.btn-container>button {
+    width: 100%;
+    
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 4rem 0rem;
+}
+
+p {
+    color: white;
+    font-size: 1.2rem;
+    text-shadow: 0rem 0.08rem 0.2rem green;
+}
