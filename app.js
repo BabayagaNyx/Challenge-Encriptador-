@@ -60,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   input.addEventListener("input", function() {
       audio.play();
+      audio.volume = 0.5;      
   });
 });
 
@@ -85,7 +86,7 @@ function matrix () {
 	ctx.fillRect(0, 0, w, h);
 
 	// Establezca la color en verde y la fuente en monoespaciado de 15 puntos en el contexto del dibujo
-	ctx.fillStyle = '#0f0';
+	ctx.fillStyle = '#0f0'; //#0f0
 	ctx.font = '12.5pt monospace';
 
 	// Para cada columna, coloque un carácter aleatorio al final

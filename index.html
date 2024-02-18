@@ -15,16 +15,17 @@
         <nav>
             <div class="logo"></div>
             <h1><span>Encriptador</span></h1>
+            <audio controls volume="0.5" id="miAudio">
+                <source src="IMG/music.mp3" type="audio/mpeg">
+                Tu navegador no soporta la reproducción de audio.
+            </audio>
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExczR6dXB3aTN0eXQ4N3k5YXpoOGJmN2s3c2gzc3JhaWpoNTk4Zjk0bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26xBEez1vnVb2WgBq/giphy.gif" alt="cat">
         </nav>
     </header>
     <main>
         <section class="seccion1">
             <div class="textarea-container">
                 <textarea type="text" class="texto1" id="input1" placeholder="Ingrese un texto sin acentos y en minusculas"></textarea>
-                <audio id="miAudio">
-                    <source src="IMG/music.mp3" type="audio/mpeg">
-                    Tu navegador no soporta la reproducción de audio.
-                </audio>
             </div>
             <div class="btn-container">
                 <button class="btn-encriptar" onclick="encriptarTexto()">Encriptar</button>
@@ -43,7 +44,7 @@
         </section>
     </main>
     <footer>
-        <p>© 2024 Desarrollado por Carlos Alberto Cárdenas Silva</p>
+        <p class="pFoot">© 2024 Desarrollado por Carlos Alberto Cárdenas Silva</p>
     </footer>
     <script src="app.js"> </script>
 </body>
