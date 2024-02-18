@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
   input.addEventListener("input", function() {
       audio.play();
-      audio.volume = 0.5;      
+      audio.volume = 0.4;      
   });
 });
 
