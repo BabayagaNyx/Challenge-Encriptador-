@@ -54,6 +54,14 @@ function copiar() {
   var copiado = document.execCommand('copy');
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  var input = document.getElementById("input1");
+  var audio = document.getElementById("miAudio");
+
+  input.addEventListener("input", function() {
+      audio.play();
+  });
+});
 
 // *********** INICIO EFECTO MATRIX *********** //
 // Obtener el nodo de lienzo y el contexto de dibujo
